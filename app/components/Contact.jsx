@@ -17,10 +17,10 @@ const Contact = () => {
 
             <div>
               <a
-                href="mailto:hackathon@nith.ac.in"
+                href="mailto:hack@nith.ac.in"
                 className="text-[#5A2A25] hover:text-[#E8A87C] transition-colors"
               >
-                hackathon@nith.ac.in
+                hack@nith.ac.in
               </a>
             </div>
           </div>
@@ -38,10 +38,10 @@ const Contact = () => {
                 Contact:
                 <br />
                 <a
-                  href="mailto:hackathon@nith.ac.in"
+                  href="mailto:hack@nith.ac.in"
                   className="hover:text-[#E8A87C] transition-colors"
                 >
-                  hackathon@nith.ac.in
+                  hack@nith.ac.in
                 </a>
               </p>
             </div>
