@@ -40,7 +40,7 @@ export default function Home() {
       
       {currentPage === 'home' && (
         <>
-          <HeroSlider />
+          {/* <HeroSlider /> */}
           
           {/* Main Content Area with Sidebar */}
           <div className="container mx-auto px-4 py-8 lg:py-12">
