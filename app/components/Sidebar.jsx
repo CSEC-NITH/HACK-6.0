@@ -34,8 +34,8 @@ const Sidebar = () => {
         <p className="text-sm text-[#F2D5C4]">
           Contact:
           <br />
-          <a href="mailto:hackathon@nith.ac.in" className="hover:text-[#E8A87C] transition-colors">
-            hackathon@nith.ac.in
+          <a href="mailto:hack@nith.ac.in" className="hover:text-[#E8A87C] transition-colors">
+            hack@nith.ac.in
           </a>
         </p>
       </div>

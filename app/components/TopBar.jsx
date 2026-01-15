@@ -12,7 +12,7 @@ const TopBar = () => {
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg> */}
             <div className="text-center">
-              <span className="text-[#E3AFA0]">hackathon@nith.ac.in</span>
+              <span className="text-[#E3AFA0]">hack@nith.ac.in</span>
               <br />
               <span className="text-[#F2D5C4]">
                 HACKATHON ON MOBILE DEVICE AND APPLICATION SECURITY | March 2026

@@ -12,8 +12,6 @@ import Registration from './components/Registration'
 import Accommodation from './components/Accommodation'
 import Committee from './components/Committee'
 import Contact from './components/Contact'
-import Prizes from './components/Prizes'
-import Team from './components/Team'
 
 export default function Home() {
 
@@ -93,11 +91,11 @@ export default function Home() {
         </div>
       )}
 
-      {currentPage === 'prizes' && (
+      {/* {currentPage === 'prizes' && (
         <div className="pt-8 lg:pt-12">
           <Prizes />
         </div>
-      )}
+      )} */}
       
       <Footer />
     </div>
