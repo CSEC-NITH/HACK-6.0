@@ -1,3 +1,5 @@
+import React from "react";
+
 const MainContent = () => {
   const objectives = [
     "Enhance Awareness: Educate participants on mobile device security threats and best practices.",
@@ -40,9 +42,13 @@ const MainContent = () => {
       event: "Last date for Submission after the First Round of Evaluation",
       date: "Late February 2026",
     },
-    { event: "Second Round of Evaluation (Demo/PoC)", date: "Early March 2026" },
     {
-      event: "Last Date of Submission of Final Product (After Second Evaluation)",
+      event: "Second Round of Evaluation (Demo/PoC)",
+      date: "Early March 2026",
+    },
+    {
+      event:
+        "Last Date of Submission of Final Product (After Second Evaluation)",
       date: "10th March 2026",
     },
     { event: "Result for Grand Finale Teams", date: "12th March 2026" },
@@ -54,16 +60,16 @@ const MainContent = () => {
     <div className="space-y-12">
       {/* About Hackathon Section */}
       <section>
-        <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+        <div className="mb-6 md:mb-8">
+          <div className="flex items-center mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
               About Hackathon
             </h3>
             <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
           </div>
         </div>
 
-        <div className="space-y-4 text-base text-[#33110E]">
+        <div className="space-y-4 text-sm md:text-base lg:text-lg text-[#33110E]">
           <p className="text-justify leading-relaxed">
             Hackathon Under Information Security Education Awareness (ISEA) on
             theme Mobile Device and Application Security at NIT Hamirpur. The
@@ -81,18 +87,22 @@ const MainContent = () => {
           </p>
 
           <div className="mt-6">
-            <p className="font-bold mb-3">Hackathon Objectives</p>
-            <ul className="space-y-2">
+            <p className="font-bold mb-3 text-sm md:text-base lg:text-lg">
+              Hackathon Objectives
+            </p>
+            <ul className="space-y-2 md:space-y-3">
               {objectives.map((objective, index) => (
                 <li key={index} className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-[#E8A87C] mr-3 mt-0.5 flex-shrink-0"
+                    className="w-4 h-4 md:w-5 md:h-5 text-[#E8A87C] mr-2 md:mr-3 mt-0.5 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
                     <circle cx="10" cy="10" r="3" />
                   </svg>
-                  <span className="text-justify">{objective}</span>
+                  <span className="text-justify text-sm md:text-base lg:text-lg">
+                    {objective}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -102,35 +112,49 @@ const MainContent = () => {
 
       {/* Timeline and Structure Section */}
       <section>
-        <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+        <div className="mb-6 md:mb-8">
+          <div className="flex items-center mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
               Hackathon Timeline and Structure:
             </h3>
             <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
           </div>
         </div>
 
-        <div className="space-y-4 text-base text-[#33110E]">
+        <div className="space-y-4 text-sm md:text-base lg:text-lg text-[#33110E]">
           <p>
             The hackathon will be conducted over a period of 4 months with three
             rounds of evaluation.
           </p>
 
-          <ul className="space-y-4">
+          <ul className="space-y-3 md:space-y-4">
             {phases.map((phase, index) => (
-              <li key={index} className="flex items-start border-b border-[#E3AFA0]/30 pb-4">
+              <li
+                key={index}
+                className="flex items-start border-b border-[#E3AFA0]/30 pb-3 md:pb-4"
+              >
                 <svg
-                  className="w-5 h-5 text-[#E8A87C] mr-3 mt-1 flex-shrink-0"
+                  className="w-4 h-4 md:w-5 md:h-5 text-[#E8A87C] mr-2 md:mr-3 mt-1 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
-                  <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="2" />
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="8"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
                   <circle cx="10" cy="10" r="3" />
                 </svg>
                 <div>
-                  <span className="font-bold text-lg">{phase.title} - </span>
-                  <span>{phase.description}</span>
+                  <span className="font-bold text-base md:text-lg lg:text-xl">
+                    {phase.title} -{" "}
+                  </span>
+                  <span className="text-sm md:text-base lg:text-lg">
+                    {phase.description}
+                  </span>
                 </div>
               </li>
             ))}
@@ -140,16 +164,16 @@ const MainContent = () => {
 
       {/* Timeline Table Section */}
       <section>
-        <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+        <div className="mb-6 md:mb-8">
+          <div className="flex items-center mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
               Timeline:
             </h3>
             <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
           </div>
         </div>
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0">
           <table className="w-full border-collapse">
             <tbody>
               {timeline.map((item, index) => (
@@ -159,8 +183,10 @@ const MainContent = () => {
                     index % 2 === 0 ? "bg-[#F5D7C8]/20" : "bg-white"
                   } border-b border-[#E3AFA0]/30`}
                 >
-                  <td className="px-4 py-3 text-[#33110E]">{item.event}</td>
-                  <td className="px-4 py-3 text-[#5A2A25] font-medium">
+                  <td className="px-3 md:px-4 py-3 md:py-4 text-[#33110E] text-xs md:text-sm lg:text-base">
+                    {item.event}
+                  </td>
+                  <td className="px-3 md:px-4 py-3 md:py-4 text-[#5A2A25] font-medium text-xs md:text-sm lg:text-base whitespace-nowrap">
                     {item.date}
                   </td>
                 </tr>
@@ -172,16 +198,16 @@ const MainContent = () => {
 
       {/* About NIT Hamirpur Section */}
       <section>
-        <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+        <div className="mb-6 md:mb-8">
+          <div className="flex items-center mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
               About NIT Hamirpur
             </h3>
             <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
           </div>
         </div>
 
-        <div className="text-base text-[#33110E]">
+        <div className="text-sm md:text-base lg:text-lg text-[#33110E]">
           <p className="text-justify leading-relaxed">
             Established in 1986, National Institute of Technology Hamirpur is an
             institute of national importance dedicated to excellence in
