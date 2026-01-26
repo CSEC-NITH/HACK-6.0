@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 // Smooth scroll handler
 const handleSmoothScroll = (e, href) => {
@@ -15,14 +17,14 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Problem Statements', href: '#problem-statements' },
+    { name: 'Home', href: '/' },
+    { name: 'Problem Statements', href: '/problem' },
     // { name: 'Prizes', href: '#prizes' },
-    { name: 'Registration', href: '#registration' },
-    { name: 'Accommodation', href: '#accommodation' },
-    { name: 'Committee', href: '#committee' },
-    { name: 'Contact', href: '#contact' },
-    { name:"Team", href:"#team" }
+    { name: 'Registration', href: '/registration' },
+    { name: 'Accommodation', href: '/accomodation' },
+    { name: 'Committee', href: '/commitee' },
+    { name: 'Contact', href: '/contact' },
+    { name:"Team", href:"/team" }
   ];
 
   return (

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 
 const ProblemStatements = () => {
@@ -158,22 +160,22 @@ const ProblemStatements = () => {
   return (
     <div className="container mx-auto px-4 py-8 lg:py-12">
       <div className="max-w-6xl mx-auto">
-        <h4 className="text-3xl font-bold text-[#5A2A25] mb-8">Problem Statements</h4>
+        <h4 className="text-2xl sm:text-3xl font-bold text-[#5A2A25] mb-8">Problem Statements</h4>
 
         {/* Tab Navigation */}
-        <div className="mb-6">
-          <div className="flex flex-wrap gap-2 border-b-2 border-[#5A2A25]">
+        <div className="mb-6 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+          <div className="flex flex-nowrap gap-2 border-b-2 border-[#5A2A25] min-w-max sm:min-w-0">
             {problemStatements.map((ps) => (
               <button
                 key={ps.id}
                 onClick={() => setActiveTab(ps.id)}
-                className={`px-6 py-3 font-medium transition-all duration-200 relative ${
+                className={`px-3 sm:px-6 py-3 font-medium transition-all duration-200 relative text-sm sm:text-base whitespace-nowrap ${
                   activeTab === ps.id
                     ? 'text-[#E8A87C] border-b-2 border-[#E8A87C] -mb-0.5'
                     : 'text-[#33110E] hover:text-[#5A2A25]'
                 }`}
               >
-                Problem Statement {ps.id}
+                Problem {ps.id}
               </button>
             ))}
           </div>
@@ -187,11 +189,11 @@ const ProblemStatements = () => {
               className={`${activeTab === ps.id ? 'block' : 'hidden'}`}
             >
               <div className="mb-6">
-                <h3 className="text-2xl font-semibold text-[#5A2A25] pb-3 border-b-2 border-[#E8A87C] inline-block">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#5A2A25] pb-3 border-b-2 border-[#E8A87C] inline-block">
                   {ps.title}
                 </h3>
               </div>
-              <div className="prose max-w-none text-[#33110E]">{ps.content}</div>
+              <div className="prose max-w-none text-sm sm:text-base text-[#33110E]">{ps.content}</div>
             </div>
           ))}
         </div>

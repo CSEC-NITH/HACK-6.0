@@ -55,11 +55,11 @@ const MainContent = () => {
       {/* About Hackathon Section */}
       <section>
         <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 gap-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#5A2A25] whitespace-nowrap">
               About Hackathon
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25] w-full sm:w-auto"></div>
           </div>
         </div>
 
@@ -103,11 +103,11 @@ const MainContent = () => {
       {/* Timeline and Structure Section */}
       <section>
         <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 gap-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#5A2A25] whitespace-nowrap">
               Hackathon Timeline and Structure:
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25] w-full sm:w-auto"></div>
           </div>
         </div>
 
@@ -141,15 +141,15 @@ const MainContent = () => {
       {/* Timeline Table Section */}
       <section>
         <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 gap-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#5A2A25] whitespace-nowrap">
               Timeline:
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25] w-full sm:w-auto"></div>
           </div>
         </div>
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
           <table className="w-full border-collapse">
             <tbody>
               {timeline.map((item, index) => (
@@ -159,8 +159,8 @@ const MainContent = () => {
                     index % 2 === 0 ? "bg-[#F5D7C8]/20" : "bg-white"
                   } border-b border-[#E3AFA0]/30`}
                 >
-                  <td className="px-4 py-3 text-[#33110E]">{item.event}</td>
-                  <td className="px-4 py-3 text-[#5A2A25] font-medium">
+                  <td className="px-3 sm:px-4 py-3 text-sm sm:text-base text-[#33110E]">{item.event}</td>
+                  <td className="px-3 sm:px-4 py-3 text-sm sm:text-base text-[#5A2A25] font-medium whitespace-nowrap">
                     {item.date}
                   </td>
                 </tr>
@@ -173,11 +173,11 @@ const MainContent = () => {
       {/* About NIT Hamirpur Section */}
       <section>
         <div className="mb-8">
-          <div className="flex items-center mb-6">
-            <h3 className="text-2xl font-semibold text-[#5A2A25] mr-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 gap-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#5A2A25] whitespace-nowrap">
               About NIT Hamirpur
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25] w-full sm:w-auto"></div>
           </div>
         </div>
 
