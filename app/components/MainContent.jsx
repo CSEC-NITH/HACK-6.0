@@ -55,7 +55,7 @@ const MainContent = () => {
             <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
               About Hackathon
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25]" />
           </div>
         </div>
 
@@ -80,6 +80,7 @@ const MainContent = () => {
             <p className="font-bold mb-3 text-sm md:text-base lg:text-lg">
               Hackathon Objectives
             </p>
+
             <ul className="space-y-2 md:space-y-3">
               {objectives.map((objective, index) => (
                 <li key={index} className="flex items-start">
@@ -105,9 +106,9 @@ const MainContent = () => {
         <div className="mb-6 md:mb-8">
           <div className="flex items-center mb-4 md:mb-6">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
-              Hackathon Timeline and Structure:
+              Hackathon Timeline and Structure
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25]" />
           </div>
         </div>
 
@@ -157,9 +158,9 @@ const MainContent = () => {
         <div className="mb-6 md:mb-8">
           <div className="flex items-center mb-4 md:mb-6">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
-              Timeline:
+              Timeline
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25]" />
           </div>
         </div>
 
@@ -186,6 +187,51 @@ const MainContent = () => {
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section>
+        <div className="mb-6 md:mb-8">
+          <div className="flex items-center mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
+              Sponsors
+            </h3>
+            <div className="flex-1 border-b-2 border-[#5A2A25]" />
+          </div>
+        </div>
+
+        <div className="text-center mb-12">
+          <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-[#5A2A25] mb-8">
+            Gold Sponsors
+          </h4>
+
+          <div className="flex flex-wrap justify-center gap-12">
+            <img
+              src="/assets/meity_logo.png"
+              alt="MeitY"
+              className="h-28 md:h-36 lg:h-44 object-contain"
+            />
+            <img
+              src="/assets/isea_logo.png"
+              alt="ISEA"
+              className="h-28 md:h-36 lg:h-44 object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="text-center">
+          <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-[#5A2A25] mb-8">
+            Silver Sponsor
+          </h4>
+
+          <div className="flex justify-center">
+            <img
+              src="/assets/devfolio_logo.png"
+              alt="Devfolio"
+              className="h-24 md:h-32 lg:h-40 object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* About NIT Hamirpur Section */}
       <section>
         <div className="mb-6 md:mb-8">
@@ -193,7 +239,7 @@ const MainContent = () => {
             <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
               About NIT Hamirpur
             </h3>
-            <div className="flex-1 border-b-2 border-[#5A2A25]"></div>
+            <div className="flex-1 border-b-2 border-[#5A2A25]" />
           </div>
         </div>
 

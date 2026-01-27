@@ -164,7 +164,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                {/* <Link
+                <Link
                   href="/prizes"
                   className="text-[#E3AFA0] text-xs md:text-sm hover:text-[#E8A87C] transition-colors flex items-center"
                 >
@@ -183,7 +183,7 @@ const Footer = () => {
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
                   Prizes
-                </Link> */}
+                </Link> 
               </li>
               <li>
                 <Link

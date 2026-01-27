@@ -14,6 +14,7 @@ export default function Home() {
           {/* Main Content - Takes 2/3 width on desktop */}
           <main className="">
             <MainContent />
+            
           </main>
         </div>
       </div>
