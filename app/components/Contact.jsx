@@ -34,7 +34,7 @@ const Contact = () => {
     {
       icon: "📧",
       title: "Email",
-      details: ["hack@nith.ac.in"],
+      details: ["csec@nith.ac.in"],
     },
     {
       icon: "📍",
@@ -220,10 +220,10 @@ const Contact = () => {
                   Primary Email
                 </p>
                 <a
-                  href="mailto:hack@nith.ac.in"
+                  href="mailto:csec@nith.ac.in"
                   className="text-[#E3AFA0] hover:text-[#E8A87C] transition-colors break-all"
                 >
-                  hack@nith.ac.in
+                  csec@nith.ac.in
                 </a>
               </div>
 

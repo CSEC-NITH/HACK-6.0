@@ -3,28 +3,13 @@ import { useEffect } from "react";
 
 const Registration = () => {
   useEffect(() => {
-    let scriptAdded = false;
-    const existingScript = document.querySelector(
-      'script[src="https://apply.devfolio.co/v2/sdk.js"]'
-    );
-
-    if (!existingScript) {
-      const script = document.createElement("script");
-      script.src = "https://apply.devfolio.co/v2/sdk.js";
-      script.async = true;
-      script.defer = true;
-      document.body.appendChild(script);
-      scriptAdded = true;
-    }
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
     return () => {
-      if (scriptAdded) {
-        const injectedScript = document.querySelector(
-          'script[src="https://apply.devfolio.co/v2/sdk.js"]'
-        );
-        if (injectedScript) {
-          document.body.removeChild(injectedScript);
-        }
-      }
+      document.body.removeChild(script);
     };
   }, []);
   return (
@@ -38,38 +23,25 @@ const Registration = () => {
               {/* Decorative corner accents */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#E8A87C] opacity-10 rounded-bl-full"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#E8A87C] opacity-10 rounded-tr-full"></div>
-              
-              <div className="relative z-10">
+
+              <div className="relative z-10 flex flex-col justify-center items-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#F2D5C4] mb-2 text-center">
                   Ready to Join?
                 </h2>
                 <p className="text-[#E8A87C] text-sm md:text-base mb-6 text-center">
                   Register now and be part of HackSecure 2026
                 </p>
-                
-                <div className="flex justify-center">
-                  <a
-                    href="https://devfolio.co/apply?slug=hacksecure-1461"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#3E1714] font-bold rounded-lg border-2 border-[#E8A87C] hover:bg-[#E8A87C] hover:text-white transition-all duration-300 shadow-lg"
-                  >
-                    Apply with Devfolio
-                  </a>
-                </div>
-                
-                {/* Devfolio SDK Button (appears when hackathon is verified) */}
-                <div className="flex justify-center mt-2">
-                  <div
-                    className="apply-button"
-                    data-hackathon-slug="hacksecure-1461"
-                    data-button-theme="light"
-                    style={{ height: "44px", width: "312px", display: "none" }}
-                  ></div>
-                </div>
-                
+
+                <div
+                  className="apply-button"
+                  data-hackathon-slug="hacksecure-1461"
+                  data-button-theme="light"
+                  style={{ height: "44px", width: "312px" }}
+                ></div>
+
                 <p className="text-[#F5D7C8] text-xs md:text-sm mt-4 text-center opacity-80">
-                  🚀 Quick registration • 🎯 Instant confirmation • 🏆 Amazing prizes await
+                  🚀 Quick registration • 🎯 Instant confirmation • 🏆 Amazing
+                  prizes await
                 </p>
               </div>
             </div>
@@ -186,10 +158,10 @@ const Registration = () => {
                 Contact:
                 <br />
                 <a
-                  href="mailto:hack@nith.ac.in"
+                  href="mailto:csec@nith.ac.in"
                   className="hover:text-[#E8A87C] transition-colors"
                 >
-                  hack@nith.ac.in
+                  csec@nith.ac.in
                 </a>
               </p>
             </div>

@@ -1,4 +1,3 @@
-const Accommodation = () => {
   const facilities = [
     'Comfortable dormitory rooms with bedding',
     'Common dining facilities with 3 meals per day',
@@ -29,10 +28,12 @@ const Accommodation = () => {
     {
       step: 4,
       title: 'Check-in',
-      description: 'Arrive at Satpura Hostel on March 14, 2026 for registration and check-in'
+      description: 'Arrive at Satpura Hostel on March 10, 2026 for registration and check-in'
     }
   ];
 
+
+const Accommodation = () => {
   return (
     <div className="container mx-auto px-4 py-20 lg:py-12">
       {/* Page Title */}
@@ -59,17 +60,17 @@ const Accommodation = () => {
 
               <div>
                 <p className="font-semibold text-[#5A2A25] mb-2">Check-in Date:</p>
-                <p className="text-sm sm:text-base">March 14, 2026</p>
+                <p className="text-sm sm:text-base">March 10, 2026</p>
               </div>
 
               <div>
                 <p className="font-semibold text-[#5A2A25] mb-2">Check-out Date:</p>
-                <p className="text-sm sm:text-base">March 16, 2026</p>
+                <p className="text-sm sm:text-base">March 11, 2026</p>
               </div>
 
               <div>
                 <p className="font-semibold text-[#5A2A25] mb-2">Duration:</p>
-                <p className="text-sm sm:text-base">2 nights (accommodating the Grand Finale event)</p>
+                <p className="text-sm sm:text-base">1 nights (accommodating the Grand Finale event)</p>
               </div>
             </div>
           </div>
@@ -156,23 +157,23 @@ const Accommodation = () => {
 
                 <div>
                   <p className="text-[#F2D5C4] font-semibold text-sm mb-2">Event Dates</p>
-                  <p className="text-[#E3AFA0] text-sm">March 14-15, 2026</p>
+                  <p className="text-[#E3AFA0] text-sm">March 10-11, 2026</p>
                 </div>
 
                 <div>
                   <p className="text-[#F2D5C4] font-semibold text-sm mb-2">Check-in</p>
-                  <p className="text-[#E3AFA0] text-sm">March 14, 2026</p>
+                  <p className="text-[#E3AFA0] text-sm">March 10, 2026</p>
                 </div>
 
                 <div>
                   <p className="text-[#F2D5C4] font-semibold text-sm mb-2">Check-out</p>
-                  <p className="text-[#E3AFA0] text-sm">March 16, 2026</p>
+                  <p className="text-[#E3AFA0] text-sm">March 11, 2026</p>
                 </div>
 
                 <div className="border-t border-[#E8A87C]/30 pt-6">
                   <p className="text-[#F2D5C4] font-semibold text-sm mb-2">Questions?</p>
                   <a
-                    href="mailto:hackathon@nith.ac.in"
+                    href="mailto:csec@nith.ac.in"
                     className="text-[#E8A87C] hover:text-white transition-colors text-sm underline"
                   >
                     Contact us
