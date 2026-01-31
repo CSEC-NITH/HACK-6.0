@@ -34,7 +34,7 @@ const Contact = () => {
     {
       icon: "📧",
       title: "Email",
-      details: ["csec@nith.ac.in"],
+      details: ["hack.csec.nith25@gmail.com"],
     },
     {
       icon: "📍",
@@ -53,33 +53,39 @@ const Contact = () => {
 
   const faqs = [
     {
-      question: "How do I register for the hackathon?",
+      question: "How do I register?",
       answer:
-        'You can register through our online registration form available on the Registration page. Just click that big, shiny "Register Now" button on our website, fill in your details, and boom—you are in! Do not wait too long though; spots fill up fast!',
+        'Just click that big, shiny "Register Now" button on our website, fill in your details, and boom—you\'re in! Don\'t wait too long though; spots fill up fast!',
     },
     {
-      question: "What is the team size limit?",
+      question: "Who can participate?",
       answer:
-        "Teams can have 2-4 members. You can also register individually if you prefer to work alone or find teammates during the event.",
+        "Whether you're a coding ninja, a design wizard, or just someone with crazy ideas—everyone's welcome! Students, beginners, pros… if you've got the passion, you've got a spot here.",
     },
     {
-      question: "Is there a registration fee?",
-      answer: `No, HACKSECURE'26 is completely free! Just register and you are in. There are no registration fees or hidden charges.`,
+      question: "What is the procedure for participation?",
+      answer:
+        "Participants must first choose one of the 5 problem statements listed on website. After selecting, they can submit a project proposal and a short presentation video explaining their idea. These attachments are optional, but adding them significantly increases the chances of getting shortlisted. Once submitted, selected teams will move forward to the final hackathon round and build their solution.",
     },
     {
-      question: "Can I participate from a different state/country?",
+      question: "Will the problem statements change during the hackathon?",
       answer:
-        "Yes! Participation is open to individuals and teams from across India and internationally. Online rounds are conducted for broader accessibility.",
+        "Yes. The initial 5 problem statements are only for shortlisting teams. Once the hackathon begins, new problem statements will be revealed on the spot. Participants will then build their final project based on these newly released statements.",
     },
     {
-      question: "When is the final hackathon event?",
+      question: "Is there any registration fee?",
       answer:
-        "The final hackathon will be held on March 10-11, 2026 at NIT Hamirpur. Check the Timeline section for detailed dates of all rounds.",
+        "No, participation in HACKSECURE'26 is completely free! 🎉 Just register and get ready to innovate!",
     },
     {
-      question: "Do we need to submit a project proposal?",
+      question: "What about the accommodation for outside students?",
       answer:
-        "Yes, in Phase 1, teams need to submit their idea and approach. Selected teams will be invited to develop prototypes in hackathon.",
+        "On-campus accommodation will be provided for outstation participants! 🛏️🍽️ Details regarding lodging and meals will be shared after shortlisting.",
+    },
+    {
+      question: "Can I work on the old shortlisting problem statements during the hackathon?",
+      answer:
+        "No. The old problem statements are only for selection. The hackathon project must follow the newly revealed problem statements.",
     },
   ];
 
@@ -300,6 +306,18 @@ const Contact = () => {
               )}
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 p-6 bg-[#F5D7C8]/20 rounded-lg border-2 border-[#E8A87C]/30 text-center">
+          <p className="text-[#33110E] font-semibold">
+            Got more questions? Reach out to{" "}
+            <a
+              href="mailto:hack.csec.nith25@gmail.com"
+              className="text-[#5A2A25] hover:text-[#E8A87C] underline transition-colors"
+            >
+              hack.csec.nith25@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </div>

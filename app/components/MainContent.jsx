@@ -49,9 +49,9 @@ export default function Home() {
     { event: "Registration Window Opens", date: "31st January 2026" },
     {
       event: "Last Date for Registration & Idea Submission",
-      date: "15th February 2026",
+      date: "22nd February 2026",
     },
-    { event: "Evaluation Round", date: "15th February 2026" },
+    { event: "Evaluation Round", date: "22nd February 2026" },
     { event: "Announcement of Shortlisted Teams", date: "5th March 2026" },
     { event: "Hackathon Starts", date: "10th March 2026" },
     { event: "Project Submission Deadline", date: "11th March 2026" },
@@ -60,11 +60,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <div>
       <img
         src="/assets/hacksecure-banner.png"
         alt=""
-        className="pt-16 lg:pt-0 lg:h-[70vh] w-screen object-fill"
-      />
+        className="pt-16 lg:pt-0 lg:h-screen w-screen "
+      /></div>
 
       {/* Main Content Area */}
       <div className="container mx-auto px-4 py-8 lg:py-12">
