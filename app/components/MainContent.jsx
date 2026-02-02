@@ -60,16 +60,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="w-full ">
-      <picture className="w-full block">
-        <source media="(min-width: 1024px)" srcSet="/hack-landscape.svg" />
-        <source media="(min-width: 768px)" srcSet="/hack-landscape.svg" />
+      <div className="w-full">
+        <img src="/hack-landscape.svg" alt="HackSecure Banner - Large Screen" className="hidden lg:block w-full" />
+        <img src="/hack-landscape.svg" alt="HackSecure Banner - Medium Screen" className="hidden md:block lg:hidden w-full" />
         <img
           src="/hack-portrait.svg"
-          alt=""
-          className="w-full h-auto block"
+          alt="HackSecure Banner - Small Screen"
+          className="block md:hidden w-full mt-15"
         />
-      </picture>
       </div>
 
       {/* Main Content Area */}
@@ -156,6 +154,7 @@ export default function Home() {
                         data-hackathon-slug="hacksecure-1461"
                         data-button-theme="light"
                         style={{ height: "44px", width: "312px" }}
+                        suppressHydrationWarning
                       ></div>
 
                       <p className="text-[#F5D7C8] text-xs md:text-sm mt-4 text-center opacity-80">

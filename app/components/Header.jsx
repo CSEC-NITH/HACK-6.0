@@ -75,8 +75,8 @@ const Header = () => {
       </div>
 
       {/* Desktop Header */}
-      <header className="hidden lg:block sticky top-0 z-40 bg-[#33110E] shadow-md">
-        <div className="container mx-auto px-4">
+      <header className="hidden lg:block sticky top-0 z-40 bg-[#33110E] shadow-md w-full">
+        <div className="w-full px-4 lg:px-8 xl:px-12">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="shrink-0">
