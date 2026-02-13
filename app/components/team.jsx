@@ -27,7 +27,7 @@ const teamMembers = [
   {
     name: "Akshit Dogra",
     batch: "2027",
-    imgSrc: "https://drive.google.com/file/d/1K5XrI2tVE_-Zc1wk9g_fv4JF0_W7BP8l/view?usp=drivesdk",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052148/IMG-20241013-WA0067_j4kpmh.jpg",
   },
   {
     name: "Anshuman Kapoor",
@@ -37,7 +37,7 @@ const teamMembers = [
   {
     name: "Avirat Mahajan",
     batch: "2027",
-    imgSrc: "https://drive.google.com/file/d/1321n0BBqhXknkhfsmFACmQ--skSFg1Hj/view?usp=drivesdk",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052152/Avirat_Mahajan_efnln9.jpg",
   },
   {
     name: "Ayush Sharma",
@@ -47,7 +47,7 @@ const teamMembers = [
   {
     name: "Chhavi Thakur",
     batch: "2027",
-    imgSrc: "https://drive.google.com/file/d/1XkFHvOoGTY8u5g-ovSs8Kueo4ZY8nSTd/view?usp=drivesdk",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052167/motion_photo_2593710526921371319_frncd7.jpg",
   },
   {
     name: "Harsh Goel",
@@ -92,7 +92,7 @@ const teamMembers = [
   {
     name: "Rudesh Kumar",
     batch: "2027",
-    imgSrc: "https://drive.google.com/file/d/1NFYZL9PC_rXbI0bVFmAC80nZC_X0_SG2/view?usp=sharing",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052324/photo_fn8k7w.jpg",
   },
   {
     name: "Saksham Chhabra",
@@ -107,9 +107,13 @@ const teamMembers = [
   {
     name: "Vansh Pal",
     batch: "2027",
-    imgSrc: "https://drive.google.com/file/d/1gqDQ6KpM-6JUXeJ3DhV2J7XHTZmh5pGs/view?usp=sharing",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052161/Vansh_Photo_eiu3b1.jpg",
   },
-
+  {
+    name:"Pradyumna Sharma",
+    batch:"2027",
+    imgSrc:"https://res.cloudinary.com/dqftjf73g/image/upload/v1770053355/WhatsApp_Image_2026-02-02_at_22.01.53_rwdoaz.jpg",
+  },
   {
     name: "Abhishika",
     batch: "2028",
