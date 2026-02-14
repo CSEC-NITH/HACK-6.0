@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Filter } from "lucide-react";
 import { useGlitch } from "react-powerglitch";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -81,7 +80,7 @@ const teamMembers = [
   {
     name: "Lakshay Lalia",
     batch: "2027",
-    imgSrc: "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080749/IMG_20241101_171749_392_auyw2u.jpg",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052332/WhatsApp_Image_2026-01-13_at_23.39.46_aouok7.jpg",
   position: "Student Coordinator"
   },
   {
@@ -177,7 +176,7 @@ const teamMembers = [
   {
     name: "Jatin",
     batch: "2028",
-    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051781/IMG_6695_xvt8mc.heic",
+    imgSrc: "https://res.cloudinary.com/dkpnbush2/image/upload/v1771081952/WhatsApp_Image_2026-02-14_at_5.03.05_PM_zmsnhm.jpg",
   },
   {
     name: "Khushvinder",
@@ -192,7 +191,7 @@ const teamMembers = [
   {
     name: "Manoj Mohi",
     batch: "2028",
-    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051533/IMG_2246_fvkqii.heic",
+    imgSrc: "https://i.ibb.co/MyT4MBzB/My-photo.jpg",
   },
   {
     name: "Mohammad Asad",
@@ -207,7 +206,7 @@ const teamMembers = [
   {
     name: "Raman Bansal",
     batch: "2028",
-    imgSrc: "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088074/profile_badm2f.jpg",
+    imgSrc: "https://res.cloudinary.com/dkpnbush2/image/upload/v1771082448/DSC_3638.JPG_s7l02t.jpg",
   },
   {
     name: "Sameer Varshney",
@@ -225,9 +224,9 @@ const teamMembers = [
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051556/IMG-20260120-WA0006_allwpg.jpg",
   },
   {
-    name: "Sujal",
+    name: "Final Boss",
     batch: "2028",
-    imgSrc: "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738089730/IMG_20241030_184111_nlzhqz.jpg",
+    imgSrc: "https://res.cloudinary.com/dkpnbush2/image/upload/v1771082595/WhatsApp_Image_2026-02-14_at_8.52.00_PM_gpv3h8.jpg",
   },
   {
     name: "Sumit Kumar",
@@ -349,6 +348,11 @@ const teamMembers = [
     batch: "2029",
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051273/IMG-20260121-WA0017_swzrlf.jpg",
   },
+  {
+    name: "Kshitiz Chauhan",
+    batch: "2029",
+    imgSrc: "https://i.ibb.co/ZppTT6m0/DOC-20260214-WA0001.png",
+  },
 ];
 
 const getRole = (batch) => {
@@ -365,16 +369,84 @@ const getRole = (batch) => {
 };
 
 export default function Team() {
-  const [selectedYear, setSelectedYear] = useState(null);
-
-  const filteredMembers = selectedYear
-    ? teamMembers.filter((member) => Number(member.batch) === selectedYear)
-    : teamMembers;
+  const [activeCard, setActiveCard] = useState(null);
 
   const glitch = useGlitch({
     timing: { duration: 3950 },
     shake: false,
   });
+
+  // Group members by batch
+  const organisers = teamMembers.filter((member) => member.batch === "2027");
+  const executives = teamMembers.filter((member) => member.batch === "2028");
+  const volunteers = teamMembers.filter((member) => member.batch === "2029");
+
+  const handleCardClick = (cardId) => {
+    setActiveCard(activeCard === cardId ? null : cardId);
+  };
+
+  const renderMembersSection = (title, members, sectionId) => (
+    <div className="mb-20 relative z-10">
+      <h3 className={`text-3xl md:text-4xl mb-10 text-[#5A2A25] ${hackedFontClass} tracking-wide text-center`}>
+        {title}
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 relative z-10">
+        {members.map((member, index) => {
+          const cardId = `${sectionId}-${index}`;
+          const isActive = activeCard === cardId;
+
+          return (
+            <div
+              key={index}
+              onClick={() => handleCardClick(cardId)}
+              className={`group relative bg-slate-100 rounded-2xl overflow-hidden border transition-all duration-300 cursor-pointer ${
+                isActive
+                  ? "border-[#5A2A25]/50 shadow-[0_0_20px_rgba(90,42,37,0.15)] -translate-y-2"
+                  : "border-[#5A2A25]/20 hover:border-[#5A2A25]/50 hover:shadow-[0_0_20px_rgba(90,42,37,0.15)] hover:-translate-y-2"
+              }`}
+            >
+              <div className="aspect-4/5 relative overflow-hidden">
+                <img
+                  src={member.imgSrc}
+                  alt={member.name}
+                  className={`w-full h-full object-cover transition-transform duration-500 filter ${
+                    isActive
+                      ? "scale-110 grayscale-0"
+                      : "grayscale-20 group-hover:scale-110 group-hover:grayscale-0"
+                  }`}
+                />
+
+                {/* Gradient Overlay on Hover or Click */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-t from-[#5A2A25]/90 via-[#5A2A25]/40 to-transparent transition-opacity duration-300 flex flex-col justify-end p-6 ${
+                    isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                  }`}
+                >
+                  <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md">
+                    {member.name}
+                  </h3>
+                  {member.position && (
+                    <span className="text-md italic p-2 font-bold text-white m-1 drop-shadow-md backdrop-blur-sm">
+                      {member.position}
+                    </span>
+                  )}
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-block px-3 py-1 bg-[#5A2A25]/30 border border-[#5A2A25]/50 text-white rounded-lg text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+                      {member.batch}
+                    </span>
+
+                    <span className="inline-block px-3 py-1 bg-[#8B4A42]/30 border border-[#8B4A42]/50 text-white rounded-lg text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+                      {getRole(member.batch)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 
   return (
     <div id="team" className="min-h-screen bg-white text-[#5A2A25] selection:bg-[#5A2A25]/30">
@@ -395,71 +467,14 @@ export default function Team() {
           </p>
         </div>
 
-        {/* Filters */}
-        <div className="mb-12 relative z-10">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
-            <div className="flex items-center gap-2">
-              <Filter className="w-5 h-5 text-[#5A2A25]" />
-              <span className="text-[#5A2A25]/80 font-medium">Filter by Year:</span>
-            </div>
-            <div className="flex flex-col md:flex-row gap-2 sm:gap-4 w-full sm:w-auto justify-center">
-              {[null, 2027, 2028, 2029].map((year) => (
-                <button
-                  key={year}
-                  onClick={() => setSelectedYear(year)}
-                  className={`px-5 py-2.5 text-sm sm:text-base rounded-xl transition-all duration-300 border border-transparent whitespace-nowrap
-                    ${
-                      selectedYear === year
-                        ? "bg-gradient-to-r from-[#5A2A25] to-[#8B4A42] text-white shadow-[0_0_15px_rgba(90,42,37,0.4)] border-[#5A2A25]/60"
-                        : "bg-white/40 text-[#5A2A25]/70 hover:bg-[#5A2A25]/5 hover:text-[#5A2A25] hover:border-[#5A2A25]/30 border border-[#5A2A25]/20"
-                    }`}
-                >
-                  {year === null ? "All Years" : `${year}`}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+        {/* Organisers Section */}
+        {renderMembersSection("Organisers 2027", organisers, "organisers")}
 
-        {/* Member Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 relative z-10">
-          {filteredMembers.map((member, index) => (
-            <div
-              key={index}
-              className="group relative bg-slate-100 rounded-2xl overflow-hidden border border-[#5A2A25]/20 hover:border-[#5A2A25]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(90,42,37,0.15)] hover:-translate-y-2"
-            >
-              <div className="aspect-4/5 relative overflow-hidden">
-                <img
-                  src={member.imgSrc}
-                  alt={member.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 filter grayscale-20 group-hover:grayscale-0"
-                />
-                
-                {/* Gradient Overlay on Hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#5A2A25]/90 via-[#5A2A25]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  
-                  <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md">
-                    {member.name}
-                  </h3>
-                  {member.position && (
-                    <span className="text-md italic p-2 font-bold text-white m-1 drop-shadow-md backdrop-blur-sm">
-                       {member.position}
-                    </span>
-                    )}
-                  <div className="flex flex-wrap gap-2">
-                    <span className="inline-block px-3 py-1 bg-[#5A2A25]/30 border border-[#5A2A25]/50 text-white rounded-lg text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
-                      {member.batch}
-                    </span>
-                    
-                    <span className="inline-block px-3 py-1 bg-[#8B4A42]/30 border border-[#8B4A42]/50 text-white rounded-lg text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
-                      {getRole(member.batch)}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Executives Section */}
+        {renderMembersSection("Executives 2028", executives, "executives")}
+
+        {/* Volunteers Section */}
+        {renderMembersSection("Volunteers 2029", volunteers, "volunteers")}
       </div>
     </div>
   );
