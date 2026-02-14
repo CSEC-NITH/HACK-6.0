@@ -186,26 +186,6 @@ const Footer = () => {
                 </Link> 
               </li>
               <li>
-                <Link
-                  href="/registration"
-                  className="text-[#E3AFA0] text-xs md:text-sm hover:text-[#E8A87C] transition-colors flex items-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-3 h-3 md:w-4 md:h-4 mr-1"
-                  >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                  Registration
-                </Link>
               </li>
               <li>
                 <Link
@@ -239,12 +219,12 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  href="/contact"
                   className="text-[#E3AFA0] text-xs md:text-sm hover:text-[#E8A87C] transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
