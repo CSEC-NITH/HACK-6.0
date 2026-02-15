@@ -259,11 +259,11 @@ const teamMembers = [
     batch: "2029",
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051264/AryanSingh1st_irdfhc.jpg",
   },
-  // {
-  //   name: "Bhanu",
-  //   batch: "2029",
-  //   imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051152/Bahnu_tipt4t.heic",
-  // },
+  {
+    name: "Bhanu",
+    batch: "2029",
+    imgSrc: "https://i.ibb.co/4whmTJ0g/IMG-0617.jpg",
+  },
   {
     name: "Chaitanya Kumar",
     batch: "2029",
