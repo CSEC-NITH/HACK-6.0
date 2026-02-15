@@ -23,6 +23,18 @@ const teamMembers = [
   imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1771065611/WhatsApp_Image_2026-02-14_at_16.09.13_dw5ixn.jpg",
  position: "Lead Organizer"
 },
+  {
+    name: "Lakshay Lalia",
+    batch: "2027",
+    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052332/WhatsApp_Image_2026-01-13_at_23.39.46_aouok7.jpg",
+  position: "Student Coordinator"
+  },
+  {
+    name: "Navdeep Singh",
+    batch: "2027",
+    imgSrc: "https://res.cloudinary.com/dtrv7xbm5/image/upload/v1768491452/navdeep_ktens5.jpg",
+  position: "Student Coordinator"
+  },
 {
     name: "Abhay Chaudhary",
     batch: "2027",
@@ -77,18 +89,7 @@ const teamMembers = [
     imgSrc: "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080640/IMG_5198_xz4pzl.jpg",
   position: "Public Relations"
   },
-  {
-    name: "Lakshay Lalia",
-    batch: "2027",
-    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770052332/WhatsApp_Image_2026-01-13_at_23.39.46_aouok7.jpg",
-  position: "Student Coordinator"
-  },
-  {
-    name: "Navdeep Singh",
-    batch: "2027",
-    imgSrc: "https://res.cloudinary.com/dtrv7xbm5/image/upload/v1768491452/navdeep_ktens5.jpg",
-  position: "Student Coordinator"
-  },
+
   {
     name: "Piyush Mishra",
     batch: "2027",
@@ -224,7 +225,7 @@ const teamMembers = [
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051556/IMG-20260120-WA0006_allwpg.jpg",
   },
   {
-    name: "Final Boss",
+    name: "Sujal",
     batch: "2028",
     imgSrc: "https://res.cloudinary.com/dkpnbush2/image/upload/v1771082595/WhatsApp_Image_2026-02-14_at_8.52.00_PM_gpv3h8.jpg",
   },
@@ -258,11 +259,11 @@ const teamMembers = [
     batch: "2029",
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051264/AryanSingh1st_irdfhc.jpg",
   },
-  {
-    name: "Bhanu",
-    batch: "2029",
-    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051152/Bahnu_tipt4t.heic",
-  },
+  // {
+  //   name: "Bhanu",
+  //   batch: "2029",
+  //   imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051152/Bahnu_tipt4t.heic",
+  // },
   {
     name: "Chaitanya Kumar",
     batch: "2029",
@@ -283,11 +284,11 @@ const teamMembers = [
     batch: "2029",
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051257/IMG_9303_mssidw.jpg",
   },
-  {
-    name: "Harshit Vardhan",
-    batch: "2029",
-    imgSrc: "https://drive.google.com/file/d/1OufMMdHonYkz8J21c-WmM9w1ufhq0a5t/view?usp=drivesdk",
-  },
+  // {
+  //   name: "Harshit Vardhan",
+  //   batch: "2029",
+  //   imgSrc: "https://drive.google.com/file/d/1OufMMdHonYkz8J21c-WmM9w1ufhq0a5t/view?usp=drivesdk",
+  // },
   {
     name: "Krrish Verma",
     batch: "2029",
@@ -318,11 +319,11 @@ const teamMembers = [
     batch: "2029",
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051259/mishty_z0q9ry.jpg",
   },
-  {
-    name: "Niharika Bhandari",
-    batch: "2029",
-    imgSrc: "https://drive.google.com/file/d/1P9Yhlx9C2kMAXO6_um5b6vavL5GvCbyn/view?usp=drivesdk",
-  },
+  // {
+  //   name: "Niharika Bhandari",
+  //   batch: "2029",
+  //   imgSrc: "https://drive.google.com/file/d/1P9Yhlx9C2kMAXO6_um5b6vavL5GvCbyn/view?usp=drivesdk",
+  // },
   {
     name: "Priyansh Sood",
     batch: "2029",
@@ -338,11 +339,11 @@ const teamMembers = [
     batch: "2029",
     imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051270/SrijanSharma1st_z6hcel.jpg",
   },
-  {
-    name: "Tanishk Agrawal",
-    batch: "2029",
-    imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051248/Tanishk1st_dmo6rc.heic",
-  },
+  // {
+  //   name: "Tanishk Agrawal",
+  //   batch: "2029",
+  //   imgSrc: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051248/Tanishk1st_dmo6rc.heic",
+  // },
   {
     name: "Triyan Jha",
     batch: "2029",
@@ -352,6 +353,11 @@ const teamMembers = [
     name: "Kshitiz Chauhan",
     batch: "2029",
     imgSrc: "https://i.ibb.co/ZppTT6m0/DOC-20260214-WA0001.png",
+  },
+  {
+    name: "Shivank aggarwal",
+    batch: "2029",
+    imgSrc: "https://res.cloudinary.com/dqabpyux7/image/upload/v1771070049/WhatsApp_Image_2026-02-14_at_17.20.16_iuxtk0.jpg",
   },
 ];
 
@@ -383,6 +389,19 @@ export default function Team() {
 
   const handleCardClick = (cardId) => {
     setActiveCard(activeCard === cardId ? null : cardId);
+  };
+
+  // Group organisers by position
+  const getOrganisersByPosition = () => {
+    const grouped = {};
+    organisers.forEach((member) => {
+      const position = member.position || "Other";
+      if (!grouped[position]) {
+        grouped[position] = [];
+      }
+      grouped[position].push(member);
+    });
+    return grouped;
   };
 
   const renderMembersSection = (title, members, sectionId) => (
@@ -468,7 +487,73 @@ export default function Team() {
         </div>
 
         {/* Organisers Section */}
-        {renderMembersSection("Organisers 2027", organisers, "organisers")}
+        <div className="mb-20 relative z-10">
+          <h3 className={`text-3xl md:text-4xl mb-10 text-[#5A2A25] ${hackedFontClass} tracking-wide text-center`}>
+            Organisers 2027
+          </h3>
+          {Object.entries(getOrganisersByPosition()).map(([position, members]) => (
+            <div key={position} className="mb-16">
+              <h4 className={`text-2xl md:text-3xl mb-8 text-[#5A2A25] ${hackedFontClass} tracking-wide text-left pl-4 border-l-4 border-[#5A2A25]/50`}>
+                {position}
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 relative z-10">
+                {members.map((member, index) => {
+                  const cardId = `organisers-${position}-${index}`;
+                  const isActive = activeCard === cardId;
+
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => handleCardClick(cardId)}
+                      className={`group relative bg-slate-100 rounded-2xl overflow-hidden border transition-all duration-300 cursor-pointer ${
+                        isActive
+                          ? "border-[#5A2A25]/50 shadow-[0_0_20px_rgba(90,42,37,0.15)] -translate-y-2"
+                          : "border-[#5A2A25]/20 hover:border-[#5A2A25]/50 hover:shadow-[0_0_20px_rgba(90,42,37,0.15)] hover:-translate-y-2"
+                      }`}
+                    >
+                      <div className="aspect-4/5 relative overflow-hidden">
+                        <img
+                          src={member.imgSrc}
+                          alt={member.name}
+                          className={`w-full h-full object-cover transition-transform duration-500 filter ${
+                            isActive
+                              ? "scale-110 grayscale-0"
+                              : "grayscale-20 group-hover:scale-110 group-hover:grayscale-0"
+                          }`}
+                        />
+
+                        {/* Gradient Overlay on Hover or Click */}
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-t from-[#5A2A25]/90 via-[#5A2A25]/40 to-transparent transition-opacity duration-300 flex flex-col justify-end p-6 ${
+                            isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                          }`}
+                        >
+                          <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md">
+                            {member.name}
+                          </h3>
+                          {member.position && (
+                            <span className="text-md italic p-2 font-bold text-white m-1 drop-shadow-md backdrop-blur-sm">
+                              {member.position}
+                            </span>
+                          )}
+                          <div className="flex flex-wrap gap-2">
+                            <span className="inline-block px-3 py-1 bg-[#5A2A25]/30 border border-[#5A2A25]/50 text-white rounded-lg text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+                              {member.batch}
+                            </span>
+
+                            <span className="inline-block px-3 py-1 bg-[#8B4A42]/30 border border-[#8B4A42]/50 text-white rounded-lg text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+                              {getRole(member.batch)}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
 
         {/* Executives Section */}
         {renderMembersSection("Executives 2028", executives, "executives")}
