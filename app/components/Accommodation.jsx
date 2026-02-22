@@ -3,9 +3,6 @@
     'Common dining facilities with 3 meals per day',
     ' 24/7 security and surveillance',
     'Reliable WiFi connectivity',
-    'Basic amenities (towels, toiletries)',
-    'Laundry services',
-    'Recreation area and common rooms',
     'Medical assistance on-campus'
   ];
 
