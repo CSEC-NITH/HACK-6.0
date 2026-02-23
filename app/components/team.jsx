@@ -46,6 +46,13 @@ const teamMembers = [
     position: "Treasurer",
   },
   {
+    name: "Saurabh Choudhary",
+    batch: "2027",
+    imgSrc:
+      "https://res.cloudinary.com/dpxckckq0/image/upload/v1771869768/Polish_20260223_233110516_vyjwzv.jpg",
+    position: "Treasurer",
+  },
+  {
     name: "Akshit Dogra",
     batch: "2027",
     imgSrc:
