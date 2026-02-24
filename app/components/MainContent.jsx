@@ -49,10 +49,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <div className="w-full">
-        <img src="/hack-landscape.svg" alt="HackSecure Banner - Large Screen" className="hidden lg:block w-full" />
-        <img src="/hack-landscape.svg" alt="HackSecure Banner - Medium Screen" className="hidden md:block lg:hidden w-full" />
+        <img src="/assets/hacksecure-banner.png" alt="HackSecure Banner - Large Screen" className="hidden lg:block w-full" />
+        <img src="/assets/hacksecure-banner.png" alt="HackSecure Banner - Medium Screen" className="hidden md:block lg:hidden w-full" />
         <img
-          src="/hack-portrait.svg"
+          src="/assets/hacksecure-banner.png"
           alt="HackSecure Banner - Small Screen"
           className="block md:hidden w-full mt-15"
         />

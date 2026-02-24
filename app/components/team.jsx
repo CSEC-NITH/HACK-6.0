@@ -18,13 +18,6 @@ const hackedFontClass = "font-mono font-bold tracking-widest";
 const teamMembers = [
   // First Years
   {
-    name: "Ujjawal Maheshwari",
-    batch: "2027",
-    imgSrc:
-      "https://res.cloudinary.com/dqftjf73g/image/upload/v1771065611/WhatsApp_Image_2026-02-14_at_16.09.13_dw5ixn.jpg",
-    position: "Lead Organizer",
-  },
-  {
     name: "Lakshay Lalia",
     batch: "2027",
     imgSrc:
@@ -35,8 +28,29 @@ const teamMembers = [
     name: "Navdeep Singh",
     batch: "2027",
     imgSrc:
-      "https://res.cloudinary.com/dtrv7xbm5/image/upload/v1768491452/navdeep_ktens5.jpg",
+      "https://res.cloudinary.com/dqftjf73g/image/upload/v1771937711/WhatsApp_Image_2026-02-24_at_12.21.39_zcq20g.jpg",
     position: "Student Coordinator",
+  },
+  {
+    name: "Sujal Choudhary",
+    batch: "2027",
+    imgSrc:
+      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738091293/sujal_sosrec_ghouip.jpg",
+    position: "Lead Organizer",
+  },
+  {
+    name: "Ujjawal Maheshwari",
+    batch: "2027",
+    imgSrc:
+      "https://res.cloudinary.com/dqftjf73g/image/upload/v1771065611/WhatsApp_Image_2026-02-14_at_16.09.13_dw5ixn.jpg",
+    position: "Lead Organizer",
+  },
+  {
+    name: "Pradyumna Sharma",
+    batch: "2027",
+    imgSrc:
+      "https://res.cloudinary.com/dqftjf73g/image/upload/v1770053355/WhatsApp_Image_2026-02-02_at_22.01.53_rwdoaz.jpg",
+    position: "Lead Organizer",
   },
   {
     name: "Abhay Chaudhary",
@@ -145,13 +159,6 @@ const teamMembers = [
     position: "Web Lead",
   },
   {
-    name: "Sujal Choudhary",
-    batch: "2027",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738091293/sujal_sosrec_ghouip.jpg",
-    position: "Lead Organizer",
-  },
-  {
     name: "Vansh Pal",
     batch: "2027",
     imgSrc:
@@ -159,13 +166,6 @@ const teamMembers = [
     position: "Technical Head",
   },
 
-  {
-    name: "Pradyumna Sharma",
-    batch: "2027",
-    imgSrc:
-      "https://res.cloudinary.com/dqftjf73g/image/upload/v1770053355/WhatsApp_Image_2026-02-02_at_22.01.53_rwdoaz.jpg",
-    position: "Lead Organizer",
-  },
   {
     name: "Abhishika",
     batch: "2028",
