@@ -71,8 +71,8 @@ const teamMembers = [
     batch: "2027",
     imgSrc:
       "https://res.cloudinary.com/degzztqqo/image/upload/v1772040526/IMG_6009_zybkxc.jpg",
-  },
     position: "Treasurer",
+  },
   {
     name: "Akshit Dogra",
     batch: "2027",
