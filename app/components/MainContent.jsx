@@ -45,6 +45,61 @@ const timeline = [
   { event: "Awards Ceremony / Event Close", date: "11th March 2026" },
 ];
 
+const scheduleDay1 = [
+  {
+    time: "08:30 AM - 09:30 AM",
+    event: "Participant Registration",
+    venue: "Institute Auditorium",
+  },
+  {
+    time: "09:30 AM - 10:15 AM",
+    event: "Welcome & Inaugural",
+    venue: "Institute Auditorium",
+  },
+  { time: "10:15 AM - 10:30 AM", event: "High Tea" },
+  {
+    time: "10:30 AM - 1:00 PM",
+    event: "Hackathon Phase I and Evaluation",
+    venue: "Computer Center",
+  },
+  { time: "1:00 PM - 2:00 PM", event: "Lunch" },
+  {
+    time: "02:00 PM - 04:00 PM",
+    event: "Hackathon Phase II",
+    venue: "Computer Center",
+  },
+  {
+    time: "04:00 PM - 04:30 PM",
+    event: "Evaluation",
+    venue: "Computer Center",
+  },
+  { time: "04:30 PM - 05:00 PM", event: "Tea Break" },
+];
+
+const scheduleDay2 = [
+  {
+    time: "09:30 AM - 11:30 AM",
+    event: "Hackathon Phase III",
+    venue: "Computer Center",
+  },
+  {
+    time: "11:30 AM - 12:30 PM",
+    event: "Evaluation",
+    venue: "Computer Center",
+  },
+  {
+    time: "12:30 PM - 1:00 PM",
+    event: "Result Preparation",
+    venue: "Computer Center",
+  },
+  { time: "01:00 PM - 02:30 PM", event: "Lunch" },
+  {
+    time: "02:30 PM - 3:30 PM",
+    event: "Closing Ceremony & Prize Distribution",
+    venue: "Institute Auditorium",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -340,6 +395,88 @@ export default function Home() {
                           </td>
                           <td className="px-3 md:px-4 py-3 md:py-4 text-[#5A2A25] font-medium text-xs md:text-sm lg:text-base whitespace-nowrap">
                             {item.date}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              {/* Schedule Section */}
+              <section>
+                <div className="mb-6 md:mb-8">
+                  <div className="flex items-center mb-4 md:mb-6">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#5A2A25] mr-4 md:mr-8">
+                      Schedule
+                    </h3>
+                    <div className="flex-1 border-b-2 border-[#5A2A25]" />
+                  </div>
+                </div>
+
+                <div className="space-y-8 md:space-y-10 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0">
+                  <table className="w-full border-collapse min-w-[680px]">
+                    <tbody>
+                      <tr className="bg-[#F5D7C8]/20 border-b border-[#E3AFA0]/30">
+                        <td className="w-1/4 px-3 md:px-4 py-3 md:py-4 text-[#5A2A25] font-semibold text-xs md:text-sm lg:text-base">
+                          Day 1
+                        </td>
+                        <td className="px-4 py-3"></td>
+                      </tr>
+
+                      {scheduleDay1.map((item, index) => (
+                        <tr
+                          key={index}
+                          className={`${
+                            index % 2 === 0 ? "bg-white" : "bg-[#F5D7C8]/20"
+                          } border-b border-[#E3AFA0]/30`}
+                        >
+                          <td className="px-3 md:px-4 py-3 md:py-4 text-[#5A2A25] font-medium text-xs md:text-sm lg:text-base whitespace-nowrap">
+                            {item.time}
+                          </td>
+                          <td className="px-3 md:px-4 py-3 md:py-4">
+                            <p className="text-[#33110E] font-medium text-xs md:text-sm lg:text-base leading-tight">
+                              {item.event}
+                            </p>
+                            {item.venue && (
+                              <p className="text-[#5A2A25] font-medium text-xs md:text-sm lg:text-base mt-1 leading-tight">
+                                {item.venue}
+                              </p>
+                            )}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+
+                  <table className="w-full border-collapse min-w-[680px]">
+                    <tbody>
+                      <tr className="bg-[#F5D7C8]/20 border-b border-[#E3AFA0]/30">
+                        <td className="w-1/4 px-3 md:px-4 py-3 md:py-4 text-[#5A2A25] font-semibold text-xs md:text-sm lg:text-base">
+                          Day 2
+                        </td>
+                        <td className="px-4 py-3"></td>
+                      </tr>
+
+                      {scheduleDay2.map((item, index) => (
+                        <tr
+                          key={index}
+                          className={`${
+                            index % 2 === 0 ? "bg-white" : "bg-[#F5D7C8]/20"
+                          } border-b border-[#E3AFA0]/30`}
+                        >
+                          <td className="px-3 md:px-4 py-3 md:py-4 text-[#5A2A25] font-medium text-xs md:text-sm lg:text-base whitespace-nowrap">
+                            {item.time}
+                          </td>
+                          <td className="px-3 md:px-4 py-3 md:py-4">
+                            <p className="text-[#33110E] font-medium text-xs md:text-sm lg:text-base leading-tight">
+                              {item.event}
+                            </p>
+                            {item.venue && (
+                              <p className="text-[#5A2A25] font-medium text-xs md:text-sm lg:text-base mt-1 leading-tight">
+                                {item.venue}
+                              </p>
+                            )}
                           </td>
                         </tr>
                       ))}
